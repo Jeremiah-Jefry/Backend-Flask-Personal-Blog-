@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Blog{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to My Blog! ✨</h1>
+    <p>Write about your coding journey, share your projects, and track your learning.</p>
+    <a href="{{ url_for('create_post') }}" class="btn btn-primary">Write First Post</a>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <h3>📝 Write Posts</h3>
+        <p>Create beautiful blog posts about your learning journey.</p>
+    </div>
+    <div class="feature">
+        <h3>💾 Persistent Storage</h3>
+        <p>All your posts are safely stored in a database.</p>
+    </div>
+    <div class="feature">
+        <h3>✨ Full CRUD</h3>
+        <p>Create, read, update, and delete your content.</p>
+    </div>
+</div>
+{% endblock %}

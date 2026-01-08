@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Create Post - My Blog{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h1>✨ Create New Post</h1>
+    
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    
+    {% if success %}
+        <div class="alert alert-success">{{ success }}</div>
+    {% endif %}
+    
+    <form method="POST">
+        <div class="form-group">
+            <label for="title">Post Title:</label>
+            <input type="text" id="title" name="title" required 
+                   value="{{ request.form.title if request.form else '' }}">
+        </div>
+        
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>{{ request.form.content if request.form else '' }}</textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="tags">Tags (optional):</label>
+            <input type="text" id="tags" name="tags" placeholder="python, flask, backend">
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">📝 Publish Post</button>
+            <a href="{{ url_for('posts') }}" class="btn btn-secondary">← View Posts</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
