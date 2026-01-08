@@ -1,26 +1,20 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ post.title }} - My Blog{% endblock %}
+{% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
-<article class="post-detail">
-    <header>
-        <h1>{{ post.title }}</h1>
-        <div class="post-meta">
-            <span>📅 {{ post.created_at }}</span>
-            {% if post.tags %}
-                <span class="tags">{{ post.tags }}</span>
-            {% endif %}
-        </div>
-    </header>
-    
-    <div class="post-content">
-        {{ post.content|replace('\n', '<br>')|safe }}
-    </div>
-    
-    <div class="post-actions">
-        <a href="{{ url_for('edit_post', id=post['id']) }}" class="btn btn-primary">✏️ Edit Post</a>
-        <a href="{{ url_for('posts') }}" class="btn btn-secondary">← Back to Posts</a>
-    </div>
-</article>
+<h1>{{ post.title }}</h1>
+<p class="date">{{ post.created_at[:10] }}</p>
+
+<div class="post-content">
+    {{ post.content|replace('\n', '<br>')|safe }}
+</div>
+
+<div class="actions">
+    <a href="{{ url_for('edit_post', id=post['id']) }}" class="btn btn-warning">Edit</a>
+    <form method="POST" action="{{ url_for('delete_post', id=post['id']) }}" style="display:inline;" onsubmit="return confirm('Delete?')">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    <a href="{{ url_for('posts') }}" class="btn btn-secondary">Back</a>
+</div>
 {% endblock %}
