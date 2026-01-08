@@ -237,12 +237,30 @@ h1, h2, h3 {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.delete-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.delete-form button {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+    margin: 0;
 }
 
 .post-item .actions .btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
     margin: 0;
+}
+
+.post-item .actions .btn-danger {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
 }
 
 .post-content {
