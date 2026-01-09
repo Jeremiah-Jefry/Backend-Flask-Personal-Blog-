@@ -7,13 +7,13 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    color: #5d4e37;
-    background: linear-gradient(135deg, #fff8f0 0%, #ffeee0 100%);
+    color: #1e293b;
+    background: #f8fafc;
     min-height: 100vh;
 }
 
 .navbar {
-    background: linear-gradient(135deg, #e07a5f 0%, #d4785c 100%);
+    background: #0f172a;
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -25,7 +25,7 @@ body {
 .brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff5eb;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -35,16 +35,16 @@ body {
 }
 
 .nav-links a {
-    color: #5d4e37;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 0.5rem 1.2rem;
-    background: #fff5eb;
+    background: #3b82f6;
     border-radius: 25px;
 }
 
 .nav-links a:hover {
-    background: #ffe4d0;
+    background: #2563eb;
 }
 
 .container {
@@ -55,7 +55,7 @@ body {
 
 h1, h2, h3 {
     margin: 1.5rem 0 1rem 0;
-    color: #5d4e37;
+    color: #0f172a;
 }
 
 .hero {
@@ -70,13 +70,13 @@ h1, h2, h3 {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #5d4e37;
+    color: #0f172a;
 }
 
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #8b7355;
+    color: #64748b;
 }
 
 .btn {
@@ -93,62 +93,62 @@ h1, h2, h3 {
 }
 
 .btn-primary {
-    background: #e07a5f;
+    background: #3b82f6;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #c96a52;
+    background: #2563eb;
     transform: translateY(-2px);
 }
 
 .btn-success {
-    background: #81b29a;
+    background: #10b981;
     color: white;
 }
 
 .btn-success:hover {
-    background: #6a9b82;
+    background: #059669;
     transform: translateY(-2px);
 }
 
 .btn-info {
-    background: #7eb8c9;
+    background: #0ea5e9;
     color: white;
 }
 
 .btn-info:hover {
-    background: #5fa3b7;
+    background: #0284c7;
     transform: translateY(-2px);
 }
 
 .btn-warning {
-    background: #f2cc8f;
-    color: #5d4e37;
+    background: #f59e0b;
+    color: white;
 }
 
 .btn-warning:hover {
-    background: #e8b86d;
+    background: #d97706;
     transform: translateY(-2px);
 }
 
 .btn-danger {
-    background: #e07a5f;
+    background: #ef4444;
     color: white;
 }
 
 .btn-danger:hover {
-    background: #c96a52;
+    background: #dc2626;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: #d4c4b0;
-    color: #5d4e37;
+    background: #64748b;
+    color: white;
 }
 
 .btn-secondary:hover {
-    background: #c4b49e;
+    background: #475569;
     transform: translateY(-2px);
 }
 
@@ -168,14 +168,14 @@ h1, h2, h3 {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #5d4e37;
+    color: #1e293b;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 0.9rem;
-    border: 2px solid #ede0d4;
+    border: 2px solid #e2e8f0;
     border-radius: 12px;
     font-size: 1rem;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -185,7 +185,7 @@ h1, h2, h3 {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #e07a5f;
+    border-color: #3b82f6;
 }
 
 .form-actions {
@@ -195,12 +195,12 @@ h1, h2, h3 {
 }
 
 .error {
-    background: #fff0e6;
-    color: #c96a52;
+    background: #fef2f2;
+    color: #dc2626;
     padding: 1rem;
     border-radius: 12px;
     margin-bottom: 1rem;
-    border-left: 4px solid #e07a5f;
+    border-left: 4px solid #ef4444;
 }
 
 .posts-list {
@@ -213,7 +213,7 @@ h1, h2, h3 {
     padding: 1.5rem;
     border-radius: 16px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-    border-left: 4px solid #e07a5f;
+    border-left: 4px solid #3b82f6;
     transition: transform 0.3s ease;
 }
 
@@ -226,22 +226,22 @@ h1, h2, h3 {
 }
 
 .post-item h2 a {
-    color: #5d4e37;
+    color: #0f172a;
     text-decoration: none;
 }
 
 .post-item h2 a:hover {
-    color: #e07a5f;
+    color: #3b82f6;
 }
 
 .post-item .date {
-    color: #8b7355;
+    color: #64748b;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .post-item p {
-    color: #6b5b4f;
+    color: #475569;
     margin-bottom: 1rem;
 }
 
@@ -282,6 +282,6 @@ h1, h2, h3 {
 }
 
 .date {
-    color: #8b7355;
+    color: #64748b;
     font-size: 0.9rem;
 }
